@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+       background-image: url(https://static.vecteezy.com/system/resources/thumbnails/011/166/268/small_2x/gold-and-white-abstract-watercolor-background-free-vector.jpg);
+       background-size: contain;
+       font-family: 'GEORGIA'
+       'Times New Roman', Times, serif;
+       font-size: x-large;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: goldenrod;
+      color: black;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: goldenrod;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello, I'm Mitali Shambharkar I'm a enthusiast web developer and I have created many websites. Here are some of my major projects performed by me. </p>
+  </section>
+  
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <img src ="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/floral-wedding-invitation-card-design-template-c7a26b736486d564a22dc8caf4a63d55_screen.jpg?ts=1693567818"Project 1">
+      <h3>Project 1</h3>
+      <p>Designed this versatile invitation card for various purposes.</p>
+    </div>
+    <div class="project">
+      <img src="https://www.printsafari.com/blog/wp-content/uploads/2022/12/48431a03-5b6f-4d3c-b0f5-3d63dbf78697.png" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>Designed the very versatile poster and fliers for business purpose.</p>
+    </div>
+    <div class="project">
+        <img src="https://asset.gecdesigns.com/img/visiting-card-templates/attractive-business-card-template-to-promote-your-brand-1680963547355-cover.webp" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Designed the  the very creative business card.</p>
+      </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+</body>
+</html>
