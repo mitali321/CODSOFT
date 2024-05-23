@@ -1,0 +1,108 @@
+# CODSOFT
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .calculator {
+      width: 300px;
+      margin: 100px auto;
+      background-color: black;
+      border: 1px solid gold;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .display {
+      font-size: 24px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: gray;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: right;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.operator {
+      background-color: #ff8c00;
+      color: #fff;
+    }
+
+    button.clear {
+      background-color: #dc143c;
+      color: #fff;
+    }
+
+    button.equal {
+      background-color: #228b22;
+      color: #fff;
+    }
+
+    button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="appendToDisplay('+')" class="operator">+</button>
+      <button onclick="appendToDisplay('-')" class="operator">-</button>
+      <button onclick="appendToDisplay('*')" class="operator">*</button>
+      <button onclick="appendToDisplay('/')" class="operator">/</button>
+      <button onclick="calculate()" class="equal">=</button>
+      <button onclick="clearDisplay()" class="clear">C</button>
+    </div>
+  </div>
+
+  <script>
+    function appendToDisplay(value) {
+      document.getElementById('display').innerText += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').innerText = '';
+    }
+
+    function calculate() {
+      const result = eval(document.getElementById('display').innerText);
+      document.getElementById('display').innerText = result;
+    }
+  </script>
+</body>
+</html>
+Repository for the completion of task
